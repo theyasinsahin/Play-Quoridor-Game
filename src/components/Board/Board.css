@@ -1,0 +1,18 @@
+.Board {
+    border: var(--board-border) solid var(--walnut-800);
+    box-shadow: 0 10px 40px rgba(36, 22, 17, 0.35), inset 0 0 0 1px var(--brass-600);
+    margin-right: 2px;
+    background-color: var(--walnut-950);
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.Board td {
+    padding: 0;
+}
+
+@media (max-width: 480px) {
+  .Board {
+    margin-right: 0;
+  }
+}

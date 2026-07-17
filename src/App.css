@@ -1,0 +1,72 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2em 1em;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(169, 118, 47, 0.06), transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(93, 64, 55, 0.08), transparent 40%),
+    var(--linen-100);
+}
+
+.Square {
+  height: var(--square-size);
+  width: var(--square-size);
+  min-height: var(--square-size);
+  min-width: var(--square-size);
+  max-height: var(--square-size);
+  max-width: var(--square-size);
+  background-color: var(--parchment);
+  position: relative;
+  transition: background-color 0.15s ease;
+}
+
+.Square.highlighted {
+  background-color: var(--brass-300);
+  box-shadow: inset 0 0 0 2px var(--brass-600);
+}
+
+.Wall.horizontal {
+  height: var(--wall-thickness);
+  width: var(--square-size);
+  min-height: var(--wall-thickness);
+  min-width: var(--square-size);
+  max-height: var(--wall-thickness);
+  max-width: var(--square-size);
+  transition: background-color 0.15s ease;
+}
+
+.Wall.vertical {
+  height: var(--square-size);
+  width: var(--wall-thickness);
+  min-height: var(--square-size);
+  min-width: var(--wall-thickness);
+  max-height: var(--square-size);
+  max-width: var(--wall-thickness);
+  transition: background-color 0.15s ease;
+}
+
+.Wall.hovered {
+  background-color: var(--walnut-500);
+}
+
+.Wall.clicked {
+  background-color: gray;
+}
+
+.Space {
+  height: calc(var(--wall-thickness) * 1.6);
+  width: calc(var(--wall-thickness) * 1.6);
+  min-height: calc(var(--wall-thickness) * 1.6);
+  min-width: calc(var(--wall-thickness) * 1.6);
+}
+
+.Space.clicked{
+  background-color: var(--walnut-800);
+}
+
+.Space.hovered{
+  background-color: var(--walnut-500);
+}

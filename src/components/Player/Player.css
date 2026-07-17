@@ -1,0 +1,25 @@
+.player1, .player2 {
+    height: calc(var(--square-size) * 0.55);
+    width: calc(var(--square-size) * 0.55);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+    transition: box-shadow 0.2s ease;
+}
+
+.player2 {
+    background-color: var(--ebony);
+}
+
+.player1 {
+    background-color: var(--ivory);
+}
+
+.player1.turn, .player2.turn {
+    box-shadow: 0 0 0 3px var(--brass-500), 0 2px 6px rgba(0, 0, 0, 0.4);
+}

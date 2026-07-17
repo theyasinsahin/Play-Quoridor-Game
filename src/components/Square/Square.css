@@ -1,0 +1,21 @@
+.column-label {
+    position: absolute;
+    bottom: 2px;
+    left: 4px;
+    font-family: var(--font-mono);
+    font-size: clamp(8px, 1.8vw, 11px);
+    color: var(--walnut-700);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.row-label {
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    font-family: var(--font-mono);
+    font-size: clamp(8px, 1.8vw, 11px);
+    color: var(--walnut-700);
+    opacity: 0.6;
+    pointer-events: none;
+}
