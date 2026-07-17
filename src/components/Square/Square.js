@@ -3,7 +3,7 @@ import Player from '../Player/Player';
 import './Square.css';
 
 const Square = (props) => {
-  const { highlightedSquares, colIndex, rowIndex, player, onPlayerClick, movePlayer, id, isHighlighted, initialPlayer, boardSize } = props;
+  const { highlightedSquares, colIndex, rowIndex, player, movePlayer, id, isHighlighted, initialPlayer, boardSize } = props;
 
   const handleClick = () => {
     if (player) {
