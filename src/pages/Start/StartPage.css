@@ -40,7 +40,7 @@ h2 {
     font-weight: 600;
     font-size: clamp(1.25rem, 4vw, 1.75rem);
     margin: 0;
-    color: var(--ivory);
+    color: rgb(44, 44, 44);
     text-align: center;
     width: 100%;
 }
